@@ -1,0 +1,2 @@
+bundles:
+    - { name: EHDev\Oro\CRMBasicsBundle\EHDevOroCRMBasicsBundle, priority: 51 }
