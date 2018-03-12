@@ -27,8 +27,7 @@
         }
     },
     "require": {
-        "php": ">=7.0",
-        "oro/crm": "~2.3"
+        "oro/crm": "~2.6"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5"
