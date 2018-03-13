@@ -1,0 +1,15 @@
+{%- macro renderXingUrl(xingName) -%}
+    <li>
+        <a class="no-hash" href="{{ _self.getSocialUrl('xing', xingName) }}" target="_blank" title="Xing">
+            <i class="fab fa-xing"></i>
+        </a>
+    </li>
+{%- endmacro -%}
+
+{%- macro getSocialUrl(type, value) -%}
+    {% if value|slice(0, 5) == 'http:' or value|slice(0, 6) == 'https:' %}
+        {{ value }}
+    {% else %}
+        {{ oro_social_url(type, value) }}
+    {% endif %}
+{%- endmacro -%}
